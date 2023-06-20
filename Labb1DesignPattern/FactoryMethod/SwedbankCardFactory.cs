@@ -11,7 +11,7 @@ namespace Labb1DesignPattern
     {
         protected override IDebitCard CreateDebitCard()
         {
-            IDebitCard card = new SEBDebitCard();
+            IDebitCard card = new SwedbankDebitCard();
             return card;
         }
     }

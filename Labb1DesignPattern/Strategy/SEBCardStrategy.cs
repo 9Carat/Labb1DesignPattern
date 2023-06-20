@@ -9,15 +9,18 @@ namespace Labb1DesignPattern.Strategy
 {
     internal class SEBCardStrategy : ICardStrategy
     {
+        public IDebitCard card;
         public IDebitCard CreateCard()
         {
             IDebitCard debitCard = new SEBCardFactory().OrderNewDebitCard();
+            card = debitCard;
             return debitCard;
         }
 
         public void Withdraw(double amount)
         {
-            Console.WriteLine($"You withdrew {amount} sek from your SEB card");
+            Console.WriteLine($"You withdrew {amount} SEK from your SEB card");
+            card.NotifyObserver(amount);
         }
     }
 }
