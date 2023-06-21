@@ -22,7 +22,6 @@ namespace Labb1DesignPattern
         }
         public void NotifyObserver(double amount)
         {
-            Debug.WriteLine("Notifying observers");
             foreach (IObserver observer in observers)
             {
                 observer.Observe(amount);

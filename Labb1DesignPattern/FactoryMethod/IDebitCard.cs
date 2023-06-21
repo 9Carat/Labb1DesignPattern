@@ -9,8 +9,10 @@ namespace Labb1DesignPattern
 {
     internal interface IDebitCard
     {
+        // Card operations
         string GetName();
         double GetBalance();
+        // Observer operations
         void RegisterObserver(IObserver observer);
         void RemoveObserver(IObserver observer);
         void NotifyObserver(double amount);

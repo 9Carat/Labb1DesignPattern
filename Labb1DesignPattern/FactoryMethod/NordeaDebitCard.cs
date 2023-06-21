@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Labb1DesignPattern
 {
+    // This section as well as the Swedbank- and SEBDebitcard sections implements the observer pattern
     internal class NordeaDebitCard : IDebitCard
     {
         private List<IObserver> observers = new List<IObserver>();
@@ -22,7 +23,6 @@ namespace Labb1DesignPattern
         }
         public void NotifyObserver(double amount)
         {
-            Debug.WriteLine("Notifying observers");
             foreach (IObserver observer in observers)
             {
                 observer.Observe(amount);

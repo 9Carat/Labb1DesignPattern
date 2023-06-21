@@ -9,6 +9,9 @@ namespace Labb1DesignPattern.Strategy
 {
     internal class CardContext
     {
+        //This section implements the Strategy design pattern
+
+        // Sets the card strategy and calls the methods of corresponding strategies which in turn makes a call to the factory to create the card
         private ICardStrategy _cardStrategy;
         public void SetCardStrategy(ICardStrategy cardStrategy)
         {

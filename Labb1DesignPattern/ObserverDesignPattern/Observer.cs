@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Labb1DesignPattern.ObserverDesignPattern
 {
+    // This section implements the observer pattern
     internal class Observer : IObserver
     {
         public string ObserverName { get; set; }
