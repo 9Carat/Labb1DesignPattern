@@ -12,6 +12,7 @@ namespace Labb1DesignPattern.Strategy
         public IDebitCard card;
         public IDebitCard CreateCard()
         {
+            // Makes a call to the factory
             IDebitCard debitCard = new SEBCardFactory().OrderNewDebitCard();
             card = debitCard;
             return debitCard;

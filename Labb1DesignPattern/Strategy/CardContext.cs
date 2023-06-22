@@ -11,7 +11,7 @@ namespace Labb1DesignPattern.Strategy
     {
         //This section implements the Strategy design pattern
 
-        // Sets the card strategy and calls the methods of corresponding strategies which in turn makes a call to the factory to create the card
+        // Sets the card strategy and calls the methods of corresponding strategies which in turn makes a call to the factory to create the card or makes a withdrawal with the desired amount
         private ICardStrategy _cardStrategy;
         public void SetCardStrategy(ICardStrategy cardStrategy)
         {
