@@ -33,6 +33,10 @@ namespace Labb1DesignPattern.Facade
             }
             return Instance;
         }
+        private App() 
+        {
+
+        }
         public void Run()
         {
             // Creates a cardContext and a card strategy based on the users input
