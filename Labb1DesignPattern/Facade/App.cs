@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Labb1DesignPattern.Facade
 {
-    public class App
+    public sealed class App
     {
         // This section implements the Facade & Singleton design patterns
 
